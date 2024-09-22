@@ -14,6 +14,16 @@ let
 in
 
 {
+  xformers = lib.pipe prev.xformers [
+    (ops.addSearchPaths [
+      # libtorch_cuda.so
+      "${final.torch}/${sitePackages}/torch/lib"
+
+      # libcudart.so.12
+      "${final.nvidia-cuda-runtime-cu12}/${sitePackages}/nvidia/cuda_runtime/lib"
+    ])
+  ];
+
   cupy-cuda12x = lib.pipe prev.cupy-cuda12x [
     (ops.ignoreMissingDeps [
       "libcutensor.so.2"
