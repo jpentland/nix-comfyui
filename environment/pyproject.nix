@@ -62,6 +62,11 @@ let
         ultralytics = "*";
         yacs = "*";
         yapf = "*";
+        blake3 = "*";
+        sanitize_filename = "*";
+        pydantic = "*";
+        dynaconf = "*";
+        codetiming = "*";
       };
     }
     content;
