@@ -156,14 +156,19 @@ in
     (ops.ignoreMissingDeps [
       "libavcodec.so.58"
       "libavcodec.so.59"
+      "libavcodec.so.60"
       "libavdevice.so.58"
       "libavdevice.so.59"
+      "libavdevice.so.60"
       "libavfilter.so.7"
       "libavfilter.so.8"
+      "libavfilter.so.9"
       "libavformat.so.58"
       "libavformat.so.59"
+      "libavformat.so.60"
       "libavutil.so.56"
       "libavutil.so.57"
+      "libavutil.so.58"
     ])
 
     (ops.addSearchPaths [
