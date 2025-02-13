@@ -4,12 +4,10 @@ buildExtension {
   name = "gourieff-reactor";
   version = "0.0.0";
 
-  src = fetchFromGitHub {
-    owner = "Gourieff";
-    repo = "comfyui-reactor-node";
-    fetchSubmodules = false;
-    rev = "b3d85c761c5c8d113d0ad6e8845996cc83215d29";
-    hash = "sha256-Xy0hT5NWd5+k5o8kJtHz4qXyxsBDVfLQ2iYxywgZjoY=";
+
+  src = builtins.fetchGit {
+    url = "https://codeberg.org/Gourieff/comfyui-reactor-node.git";
+    rev = "c94df09b2544390737ceb507bcfef7af336c6249";
   };
 
   propagatedBuildInputs = [
