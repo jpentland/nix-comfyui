@@ -92,6 +92,7 @@ in
   nvidia-cusolver-cu12 = lib.pipe prev.nvidia-cusolver-cu12 [
     (package:
       package.overridePythonAttrs (old: {
+        poetryLock = null;
         src = final.fetchURL {
           url = "https://files.pythonhosted.org/packages/c2/08/953675873a136d96bb12f93b49ba045d1107bc94d2551c52b12fa6c7dec3/nvidia_cusolver_cu12-11.7.2.55-py3-none-manylinux_2_27_x86_64.whl";
           sha256sum = "";
