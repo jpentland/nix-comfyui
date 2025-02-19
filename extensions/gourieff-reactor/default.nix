@@ -4,7 +4,6 @@ buildExtension {
   name = "gourieff-reactor";
   version = "0.0.0";
 
-
   src = builtins.fetchGit {
     url = "https://codeberg.org/Gourieff/comfyui-reactor-node.git";
     rev = "c94df09b2544390737ceb507bcfef7af336c6249";
